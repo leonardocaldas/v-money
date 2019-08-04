@@ -5,6 +5,7 @@
            ref="input"
            :disabled="disabled"
            v-money="{precision, decimal, thousands, prefix, suffix}"
+           @keyup.enter.prevent="$emit('enter')"
            class="v-money"/>
 </template>
 
